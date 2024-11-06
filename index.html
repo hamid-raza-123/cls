@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Guide Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <h1>YourCompany</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <button class="sign-up">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="main">
+    <div class="text-content">
+      <h2>The Ultimate Guide To Use A Unique UI/UX</h2>
+      <p>Try our Designer-Made templates & Customization features. We offer the freedom for you to create your own unique site.</p>
+      <div class="buttons">
+        <button class="learn-more">Learn More</button>
+        <button class="get-started">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="card-section">
+      <!-- Music Card -->
+      <div class="card music-card" onclick="togglePlayPause()">
+        <div class="music-icon">🎵</div>
+        <button id="playPauseButton">Play</button>
+      </div>
+      
+      <!-- Rating Card -->
+      <div class="card rating-card">
+        <p>Rate our UI/UX</p>
+        <div class="stars">
+          <span onclick="rate(1)">⭐</span>
+          <span onclick="rate(2)">⭐</span>
+          <span onclick="rate(3)">⭐</span>
+          <span onclick="rate(4)">⭐</span>
+          <span onclick="rate(5)">⭐</span>
+        </div>
+        <p id="ratingOutput">Rate us!</p>
+      </div>
+
+      <!-- Control Card -->
+      <div class="card control-card">
+        <p>Control Your Music</p>
+        <div class="slider" onclick="adjustVolume(event)">
+          <div class="progress" id="volumeProgress"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
